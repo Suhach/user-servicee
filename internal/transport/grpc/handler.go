@@ -91,7 +91,6 @@ func (h *Handler) UpdateUser(ctx context.Context, req *userpb.UpdateUserRequest)
 			Id:    uint32(user.ID),
 			Pass:  user.Pass,
 			Email: user.Email,
-			//UpdatedAt: user.UpdatedAt,
 		},
 	}
 	return res, nil
